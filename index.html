@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit</title>
+    <style>
+        @font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/JujutsuKaisen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1800px;
+        }
+        .video {
+            width: 100%;
+            display: block;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.9rem 1.8rem;
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+            border: 3px solid rgb(252, 70, 100);
+            cursor: pointer;
+            position: absolute;
+            background-color: transparent;
+            text-decoration: none;
+            overflow: hidden;
+            z-index: 1;
+            font-family: inherit;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .btn::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(252, 70, 100);
+            transform: translateX(-100%);
+            transition: transform 0.3s;
+            z-index: -1;
+        }
+        .btn:hover::before {
+            transform: translateX(0);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: "myCustomFont";
+            padding: 10px;
+            font-size: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <video class="video" src="videoplayback.mp4" type="video/mp4" autoplay loop muted playsinline preload="auto">
+            Your browser does not support the video tag.
+        </video>
+        <button class="btn" ><a href="home.html"> Visit Site</a></button>
+    </div>
+    
+</body>
+</html>
