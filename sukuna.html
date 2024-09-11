@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukuna Domain</title>
+</head>
+<body>
+    <style>
+        @font-face {
+    font-family: 'MyCustomFont';
+    src: url('fonts/JujutsuKaisen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    @font-face {
+    font-family: 'Naruto';
+    src: url('fonts/ninja-naruto.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    *{
+    margin: 0;
+    padding: 0;
+    }
+    
+        .containermain {
+    background-size: cover; /* This makes the image cover the entire container */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    width: 100%; /* Ensures the container takes the full width of its parent */
+    height: 100vh; /* Makes the container full height */
+    overflow: hidden; /* Prevents overflow from the container itself */
+    margin: 0;
+    background-attachment: fixed; /* Creates the parallax scrolling effect */
+    background-position: center;
+    animation: zoomAndChange 20s infinite alternate ease-in-out; /* Sets the point of scaling to the center */
+    background-image: url("static/Sukunadomain.jpeg");
+
+}
+
+.container1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav1, .nav2 {
+            display: flex;
+            list-style-type: none;
+            
+            font-size: 18px;
+        }
+        li {
+            padding: 10px;
+            list-style: none;
+            margin-top: 0;
+        }
+        .nav1{
+            font-family: 'MyCustomFont';
+            font-size: 45px;
+            color: yellow;
+            font-weight: 900;
+        }
+        
+        .nav2{
+            font-family: 'Naruto';
+            font-size: 24px;
+            
+            color: yellow;
+            font-weight: 800;
+        }
+        .first{
+            
+            text-align: center;
+            position: relative;
+            top: 70%;
+            font-size: 8em;
+            font-family: 'MyCustomFont';
+            color: whitesmoke;
+            margin-top: 120px;
+            -webkit-animation: tracking-in-expand 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000)  both;
+    
+    
+        }
+        .second{
+            text-align: center;
+            position: relative;
+            top: 70%;
+            font-size: 5em;
+            font-family: 'MyCustomFont';
+            color: whitesmoke;
+            
+            -webkit-animation: tracking-in-expand infinite 2.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand 1.7s cubic-bezier(0.215, 0.610, 0.355, 1.000)  both;
+        }
+        @-webkit-keyframes tracking-in-expand {
+    0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    opacity: 1;
+    }
+    }
+    @keyframes tracking-in-expand {
+    0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+    }
+    40% {
+    opacity: 0.6;
+    }
+    100% {
+    opacity: 1;
+    }
+    }
+a{
+    text-decoration: none;
+    color: yellow;
+}
+    </style>
+    
+</body>
+<div class="containermain">
+    <div class="container1">
+        <ul class="nav1">
+            <li>JujutsuKaisen</li>
+        </ul>
+        <ul class="nav2">
+            <a href="home.html"><li>Home</li>  </a>
+            <a href="home.html"><li>Characters</li>  </a>
+            <li>Domain Expansions</li>
+        </ul>
+        
+    </div>
+    <div class="container ">
+        <h1 class="second"> Malevolent ShRine</h1>
+    </div>
+
+</div>
+</html>
